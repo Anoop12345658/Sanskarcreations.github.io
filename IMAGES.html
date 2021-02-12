@@ -1,0 +1,147 @@
+<!DOCTYPE html> 
+<html> 
+
+<meta charset="utf-8">
+
+
+<head> 
+
+  <link rel="stylesheet" href= 
+"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> 
+<link rel="stylesheet" type="text/css" href="css/style2.css">
+
+  <script src= 
+"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> 
+  </script> 
+  <script src= 
+"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"> 
+  </script> 
+</head> 
+<style> 
+  
+  img { 
+    border-radius: 8px; 
+  } 
+  
+  .container-fluid { 
+    margin-left: 12px; 
+    margin-right: 12px 
+  } 
+  
+  .contain { 
+    padding-top: 8px; 
+    padding-bottom: 8px; 
+  } 
+  
+  .modal-content, 
+  .modal-header, 
+  .modal-footer { 
+    background-color: transparent; 
+    border: 0px; 
+    color: white; 
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 1); 
+    -moz-box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 1); 
+    box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 1); 
+  } 
+  
+  .modal-dialog { 
+    width: 100%; 
+    height: 50%; 
+    margin-top: 8px; 
+  } 
+  
+  .close { 
+    color: white; 
+    opacity: 0.8; 
+  } 
+  
+  .modal-body { 
+    height: 75%; 
+  } 
+</style> 
+
+<body>
+<header>
+  <li><a href="index.html">HOME</a></li>
+    </div>
+    <ul>
+      <li><a href="#">Services</a></li>
+      <li><a href="IMAGES.html">Gallery</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header> 
+  <br> 
+  <br> 
+  <center> 
+    <h1 class="text text-success">SanskarCreations</h1> 
+    <b>Responsive image gallery</b> 
+  </center> 
+  <br> 
+  <br> 
+  <div class="container-fluid"> 
+    <center> 
+      <div id=gallery> 
+      </div> 
+    </center> 
+
+    <div class="modal fade" id="myModal" role="dialog"> 
+      <div class="modal-dialog"> 
+        <div class="modal-content"> 
+          <div class="modal-header"> 
+            <button type="button" class="close"
+                data-dismiss="modal"> 
+            × 
+            </button> 
+
+          </div> 
+          <div class="modal-body"> 
+          </div> 
+          <div class="modal-footer"> 
+             
+          </div> 
+        </div> 
+      </div> 
+  </div> 
+</div> 
+<script> 
+        
+  a = [ 
+'image4.jpg', 
+'image2.jpg', 
+'image3.jpg', 
+'image1.jpg', 
+'image5.jpg', 
+'background3.jpg'
+  ]; 
+  var x = 0; 
+  for (var i = 0; x < a.length; i++) { 
+    var append = "<div class='row'>"; 
+    for (var j = 0; j < 6 && x < a.length; j++) { 
+      append += ` 
+  <div class="contain col-sm-6 col-md-2"> 
+    <img class="img-responsive" src=` + a[x++] + `> 
+  </div> 
+  `; 
+    } 
+    append += '</div>'; 
+    appender(append); 
+  } 
+
+  function appender(x) { 
+    $('#gallery').html(function(i, original_html) { 
+      return (original_html + x); 
+    }); 
+  } 
+
+  $(document).on('click', 'img', function() { 
+    imgAddr = $(this).attr('src'); 
+    data = "<center><img src=" + imgAddr + " width='50%'>"; 
+    $('#myModal').find('.modal-body').html(data); 
+    $('#myModal').modal(); 
+  }); 
+</script> 
+</body> 
+
+</html> 
