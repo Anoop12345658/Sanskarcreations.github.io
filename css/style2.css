@@ -1,19 +1,17 @@
 
 header li a{
     text-decoration: none;
-    color: rgb(255,150,99);
+    color: #800000;
     padding: 5px 20px;
     border: 1px solid trasparent;
     transition:0.9s ease;
     background-color: trasparent;
-    color: rgb(255,150,99);
 }
 header li a:hover{
-    background-color: rgb(255,150,99);
+    background-color: #800000;
     color: #000;
 
 }
-
 }
 
 ul{
@@ -34,16 +32,16 @@ ul li{
 ul li a{
     font-family: Century Gothic;
     text-decoration: none;
-    color: rgb(255,150,99);
+    color: #800000;
     padding: 5px 20px;
     border: 1px solid trasparent;
     transition:0.9s ease;
 }
 ul li a:hover{
-    background-color: rgb(255,150,99);
+    background-color: #800000;
     color: #000;
 }
 ul li.active a{
     background-color:#000;
-    color:rgb(255,150,99);
+    color:#800000;
 }
