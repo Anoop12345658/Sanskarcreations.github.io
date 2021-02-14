@@ -16,6 +16,7 @@ header{
     background-color:#EDDA74;
     color:#fff;
 }
+
 }
 header:hover{
     background-color:#E1F5A9 ;
@@ -81,9 +82,16 @@ ul li a:hover{
     margin-bottom: 40px;
 }
 .line{
-    font-size: 14px;
+  ]font-size: 14px;
     color: #545478;
-    line-height: 35px;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 42px;
+    }
+.link{
+    color: #990000;
+    font-size: 14px;
+    line-height: 30px;
     text-align: justify;
     margin-bottom: 42px;
 
