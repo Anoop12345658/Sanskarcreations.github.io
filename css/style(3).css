@@ -14,18 +14,16 @@ header a{
 }
 header a{
     text-decoration: none;
-    color: #000;
+    color: #800000;
     padding: 5px 20px;
     border: 1px solid transparent;
     transition: 0.9s ease;
-    background-color:#EDDA74;
-    color:#fff;
+    
 }
 
-}
-header a:hover{
-    background-color:#E1F5A9 ;
-    color: #E1F5A9;
+.abc{
+    color::#800000;
+    background-color: #E1F5A9;
 }
 body{
     min-height: 100vh;
@@ -46,14 +44,14 @@ ul li{
 ul li a{
     font-family: Century Gothic;
     text-decoration: none;
-    color: rgb(255,150,99);
+    color: #800000;
     padding: 5px 20px;
     border: 1px solid trasparent;
     transition:0.9s ease;
 }
 ul li a:hover{
-    background-color: rgb(255,150,99);
-    color: #000;
+    background-color:#800000;
+    color: #fff;
 }
     
 
