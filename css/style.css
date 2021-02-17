@@ -37,6 +37,9 @@ ul li.active a{
 	background-color:#000;
 	color:#fff;
 }
+h1{
+	font-size: 40px;
+}
 .logo img{
 	float: left;
 	width: 160px;
